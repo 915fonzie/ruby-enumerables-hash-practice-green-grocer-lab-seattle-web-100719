@@ -8,6 +8,9 @@ def consolidate_cart(cart)
   end 
 end 
 new_cart 
+end
+
+def apply_coupons(cart, coupons)
   coupons.each do |coupon| 
     coupon.each do |attribute, value| 
       name = coupon[:item] 
@@ -25,10 +28,6 @@ new_cart
   end 
 end 
   cart 
-end
-
-def apply_coupons(cart, coupons)
-  # code here
 end
 
 def apply_clearance(cart)
