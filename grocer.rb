@@ -19,7 +19,7 @@ def apply_coupons(cart, coupons)
      else if cart[item][:count] >= coupon[:num] && cart.has_key["#{item} W/COUPON"]
        cart["#{item} W/COUPON"][:count] += coupon[:num]
      end
-     
+     cart[item][:count] -= 
    end
 end
 
